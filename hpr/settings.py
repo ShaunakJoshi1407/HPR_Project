@@ -25,7 +25,7 @@ SECRET_KEY = "django-insecure-t#l@h9=aaefswgnvkckec!-&80sp($@$7diy7kmuzww!zh68-2
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -121,3 +121,5 @@ STATIC_URL = "static/"
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
+import django_heroku
+django_heroku.settings(locals())
